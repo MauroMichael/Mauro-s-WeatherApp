@@ -1,9 +1,9 @@
 import React from "react";
 
-function Ciudad() {
+function City({onFilter}) {
     return (
         <h1>Yo soy Ciudad</h1>
     )
 }
 
-export default Ciudad;
+export default City;

@@ -1,10 +1,10 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 
 function Searchbar({onSearch}) {
     const [city, setCity] = useState('');
 
     function searchSubmit(e) {
-        e.prevent.default();
+        e.preventDefault();
         onSearch(city);
         setCity('');
     }
@@ -16,11 +16,11 @@ function Searchbar({onSearch}) {
         <form onSubmit={searchSubmit}>
             <input 
             type='text'
-            placeholder="Ciudad..."
+            placeholder="City..."
             value={city}
             onChange={searchChange}
             />
-            <input type='submit' value='Agregar' />
+            <input type='submit' value='Add City' />
         </form>
     )
 }
