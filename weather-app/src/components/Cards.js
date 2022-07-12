@@ -1,12 +1,23 @@
 import React from "react";
-import Card from './Card';
+import Card from './Card.js';
  
 function Cards({cities, onClose}) {
+    console.log(cities)
     return (
         <>
-        <h1>Yo soy Cards</h1>
         <div>
-            <Card/>
+            {
+                cities?.map(c => <Card
+                    key = {c.id}
+                    name = {c.name}
+                    min = {c.min}
+                    max = {c.max}
+                    img = {c.img}
+                    id = {c.id}
+                    onClose = {() => onClose(c.id)}/>
+                    
+                    )
+                }
         </div>
         </>
     )

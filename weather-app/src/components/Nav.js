@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from '../../src/logo.png'
 import Searchbar from "./SearchBar";
+import './Nav.css'
 
 function Nav({onSearch}) {
     return(
@@ -12,7 +13,7 @@ function Nav({onSearch}) {
                     Mauro's Weather App
                 </span>
             </Link>
-            <Link to='/about'>
+            <Link to='about'>
                 <span id = 'about'>About</span>
             </Link>
             <Searchbar onSearch={onSearch}/>

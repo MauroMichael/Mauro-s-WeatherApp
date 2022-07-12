@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './App.css';
-import { Outlet } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import Nav from './components/Nav';
 import About from './components/About';
@@ -10,7 +10,7 @@ import Cards from './components/Cards';
 
 const apiKey = '4ae2636d8dfbdc3044bede63951a019b';
 
-function App({onFilter}) {
+function App() {
   const [cities, setCities] = useState([]);
   const navigate = useNavigate();
 
@@ -24,16 +24,17 @@ function App({onFilter}) {
       .then((response) => {
         if(response.main !== undefined) {
           const citieElement = {
-            min: Math.round(response.main.temp_min),
-            max: Math.random(response.main.temp_max),
+            min: Math.round(response.main.temp_min - 273.15),
+            max: Math.round(response.main.temp_max - 273.15),
             id: response.id,
             wind: response.wind.speed,
-            temp: response.main.temp,
+            temp: Math.round(response.main.temp - 273.15),
             name: response.name,
             weather: response.weather[0].main,
             clouds: response.clouds.all,
             lat: response.coord.lat,
-            lon: response.coord.lon
+            lon: response.coord.lon,
+            img: response.weather[0].icon
           };
           if(cities.find(el => el.id === response.id)) {
             return alert('The city is already requested');
@@ -47,17 +48,24 @@ function App({onFilter}) {
       });
     }
 
-    console.log(cities);
+      function onFilter(id) {
+        const fullCitie = cities.filter(c => c.id === parseInt(id));
+        if(fullCitie.length > 0) {
+          return fullCitie[0];
+        } else {
+          return null
+        }
+      }
+
 
   return (
     <div className="App">
-      <Nav onSearch={onSearch}/>
-      <main>
-        <Outlet>
-          <Cards cities={cities} onClose={onClose}/> 
-          <City onFilter = {onFilter}/>
-        </Outlet>
-      </main>
+        <Nav onSearch={onSearch}/>
+      <Routes>
+        <Route exact path='/' element={<Cards cities={cities} onClose={onClose}/>}/> 
+        <Route path='/city/:id' element={<City onFilter = {onFilter}/>}/>
+        <Route path='/about' element={<About/>}/>
+      </Routes>
     </div>
   );
 }
