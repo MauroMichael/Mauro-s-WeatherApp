@@ -10,15 +10,15 @@ function Card({min, max, name, img, onClose, id}) {
             </div>
             <div className="body-card">
                 <Link to= {`city/${id}`}>
-                    <h5 className="title-card">Name:{name}</h5>
+                    <h5 id="title-card">{name}</h5>
                 </Link>
                 <div className="content">
                     <div className="temp">
-                        <p>Min: </p>
+                        <p>Min </p>
                         <p>{min}°C</p>
                     </div>
                     <div className="temp">
-                        <p>Max: </p>
+                        <p>Max </p>
                         <p>{max}°C</p>
                     </div>
                     <div className="temp">

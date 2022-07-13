@@ -13,7 +13,7 @@ function Nav({onSearch}) {
             <Link to ='/'>
                 <span className="navbar-brand">
                     <img id='logoMauro' src={Logo} with='30' height='30' alt='' />
-                   <p>Mauro's Weather App</p> 
+                   <p className="app-name">Mauro's Weather App</p> 
                 </span>
             </Link>
             <Searchbar onSearch={onSearch}/>

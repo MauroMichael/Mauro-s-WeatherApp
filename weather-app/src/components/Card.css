@@ -1,0 +1,37 @@
+.card {
+    background-color: rgb(95, 188, 225);
+    width: 25%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 2rem;
+    font-weight: bolder;
+    margin-right: 2px;
+    margin-top: 25px;
+    box-shadow:  5px 5px  5px 1px #ccc;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 8%;
+}
+
+#title-card {
+    margin: 0;
+    font-size: 30px;
+    padding-left: 40px;
+    color: midnightblue;
+}
+
+#close-icon {
+    float: right;
+    margin: 10px 20px 0px 0px ;
+}
+
+.button-close {
+    background-color: rgba(130, 130, 127, 0.986);
+    border-radius: 1rem;
+    color: white;
+    border: 0px;
+    font-size: 22px;
+}

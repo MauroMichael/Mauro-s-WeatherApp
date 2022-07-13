@@ -1,4 +1,14 @@
 input {
     border-radius: 8px;
-    border-color: rgb(207, 204, 204);
+    border-color: black;
+    width: 15%;
+    font-size: 20px;
+    background-color: rgb(221, 213, 213);
+    box-shadow:  5px 5px  5px 1px #ccc;
+}
+
+.submit-input {
+    width: 10%;
+    background-color: black;
+    color: white;
 }

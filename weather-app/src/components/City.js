@@ -10,7 +10,7 @@ function City({onFilter}) {
     return (
         <div className="city">
             <div className="city-container">
-                <h2>{city.name}</h2>
+                <h2 className="city-name">{city.name}</h2>
                 <div className="city-info">
                     <div> Temp: {city.temp}°C</div>
                     <div> Weather: {city.weather}</div>

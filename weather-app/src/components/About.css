@@ -1,0 +1,29 @@
+.about-me {
+    font-size: 20px;
+    text-align: left;
+}
+
+.about-name {
+    text-align: left;
+}
+.about-container {
+    display: flex;
+    align-content: center;
+    font-weight: bolder;
+}
+
+img.foto {
+    border-radius: 2rem;
+    max-width:100%;
+    height:auto;
+    margin-left: 3px;
+}
+
+.about-content {
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: white;
+    margin-top: 15px;
+    border-radius: 1rem;
+}

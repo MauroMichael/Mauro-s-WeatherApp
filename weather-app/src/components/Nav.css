@@ -4,7 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-p,
+.app-name,
 span {
     color: #ffd900;
     -webkit-text-stroke: 1px grey;
