@@ -1,3 +1,24 @@
 .navbar {
-    background-color: aqua;
+    color: yellow;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+p,
+span {
+    color: #ffd900;
+    -webkit-text-stroke: 1px grey;
+    font-weight: 900;
+    display:inline-block;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+#about {
+    float: right;
+    padding-right: 3%;
+    margin-left: -7%;
+}
+

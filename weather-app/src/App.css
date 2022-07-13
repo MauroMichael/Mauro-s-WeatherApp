@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.swal-modal {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: yellow;
+  border: 3px solid white;
+}
+
+.swal-title {
+  font-size: 36px;
+}
+
+.swal-text {
+ font-size: 24px;
+}

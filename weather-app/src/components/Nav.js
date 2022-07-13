@@ -7,14 +7,14 @@ import './Nav.css'
 function Nav({onSearch}) {
     return(
         <nav className="navbar">
+            <Link to='about'>
+                <span id = 'about'>About</span>
+            </Link>
             <Link to ='/'>
                 <span className="navbar-brand">
                     <img id='logoMauro' src={Logo} with='30' height='30' alt='' />
-                    Mauro's Weather App
+                   <p>Mauro's Weather App</p> 
                 </span>
-            </Link>
-            <Link to='about'>
-                <span id = 'about'>About</span>
             </Link>
             <Searchbar onSearch={onSearch}/>
         </nav>

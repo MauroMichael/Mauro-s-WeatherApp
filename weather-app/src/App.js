@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
+import swal from 'sweetalert';
 
 import Nav from './components/Nav';
 import About from './components/About';
@@ -37,13 +38,13 @@ function App() {
             img: response.weather[0].icon
           };
           if(cities.find(el => el.id === response.id)) {
-            return alert('The city is already requested');
+            return swal('Hey!', 'The city is already requested!', 'warning');
           } else {
             setCities(oldCities => [...oldCities, citieElement]);
             navigate('/');
           }
         } else {
-          alert('City not finded')
+          swal('Oops!', 'City not finded!', 'error')
         };
       });
     }
