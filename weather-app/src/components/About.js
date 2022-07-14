@@ -23,7 +23,7 @@ function About() {
                 <p className="about-me">
                 Computer Science is my universe where I seek an answer to all unknowns
                 with passion and enthusiasm. Having been an Account Manager of an IT
-                company, I was always fascinated when requesting projects and seeing
+                company, I felt always fascinated with the requesting projects,
                 their development and results.
                 </p>
         </div>

@@ -2,6 +2,7 @@ input {
     border-radius: 8px;
     border-color: black;
     width: 15%;
+    height: 35px;
     font-size: 20px;
     background-color: rgb(221, 213, 213);
     box-shadow:  5px 5px  5px 1px #ccc;
@@ -9,6 +10,7 @@ input {
 
 .submit-input {
     width: 10%;
+    height: 40px;
     background-color: black;
     color: white;
 }

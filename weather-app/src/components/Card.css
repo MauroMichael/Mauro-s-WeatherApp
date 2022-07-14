@@ -1,5 +1,5 @@
 .card {
-    background-color: rgb(95, 188, 225);
+    background-color: rgb(95, 188, 225, .6);
     width: 25%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-radius: 2rem;

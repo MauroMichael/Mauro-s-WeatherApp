@@ -35,10 +35,11 @@ function App() {
             clouds: response.clouds.all,
             lat: response.coord.lat,
             lon: response.coord.lon,
-            img: response.weather[0].icon
+            img: response.weather[0].icon,
+            humidity: response.main.humidity
           };
           if(cities.find(el => el.id === response.id)) {
-            return swal('Hey!', 'The city is already requested!', 'warning');
+            return swal('Hey!', 'The city has been already requested!', 'warning');
           } else {
             setCities(oldCities => [...oldCities, citieElement]);
             navigate('/');

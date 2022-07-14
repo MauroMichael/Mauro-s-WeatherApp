@@ -1,0 +1,30 @@
+.city {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(29, 232, 191, 0.5);
+    width: 50%;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 1rem;
+    padding: 1%;
+    margin-top: 3%;
+}
+
+.city-name {
+    color: rgb(123, 32, 161);
+}
+
+.city-info {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: bolder;
+}
+
+.back {
+    margin-top: 25px;
+    border-radius: 1rem;
+    border: 0;
+    background-color: khaki;
+}
