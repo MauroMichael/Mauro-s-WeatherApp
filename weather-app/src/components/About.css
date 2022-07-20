@@ -14,8 +14,8 @@
 
 img.foto {
     border-radius: 2rem;
-    max-height:100%;
-    width:auto;
+    max-width: 100%;
+    height :auto;
     margin-left: 3px;
 }
 

@@ -22,7 +22,7 @@ function Card({min, max, name, img, onClose, id}) {
                         <p>{max}°C</p>
                     </div>
                     <div className="temp">
-                        <img className="icon-weather" src={"http://openweathermap.org/img/wn/"+img+"@2x.png"} alt='img' />
+                        <img className="icon-weather" src={"https://openweathermap.org/img/wn/"+img+"@2x.png"} alt='img' />
                     </div>
                 </div>
             </div>
