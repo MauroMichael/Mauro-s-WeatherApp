@@ -7,6 +7,17 @@
     margin-right: 2px;
     margin-top: 25px;
     box-shadow:  5px 5px  5px 1px #ccc;
+    transition: transform 300ms ease-in-out 5ms;
+}
+
+.card:hover
+{
+box-shadow:
+1px 1px #53a7ea,
+2px 2px #53a7ea,
+3px 3px #53a7ea;
+-webkit-transform: translateX(-3px);
+transform: translateX(-3px);
 }
 
 .content {

@@ -3,9 +3,10 @@ import Card from './Card.js';
 import './Cards.css';
  
 function Cards({cities, onClose}) {
-    console.log(cities)
     return (
         <>
+        {
+        cities.length === 0 ? <h1>No cities added</h1>:
         <div className="cards-container">
             {
                 cities?.map(c => <Card
@@ -20,6 +21,7 @@ function Cards({cities, onClose}) {
                     )
                 }
         </div>
+}
         </>
     )
 }

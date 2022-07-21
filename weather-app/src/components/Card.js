@@ -12,6 +12,7 @@ function Card({min, max, name, img, onClose, id}) {
                 <Link to= {`city/${id}`}>
                     <h5 id="title-card">{name}</h5>
                 </Link>
+                <hr/>
                 <div className="content">
                     <div className="temp">
                         <p>Min </p>
