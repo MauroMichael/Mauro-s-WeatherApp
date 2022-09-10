@@ -2,3 +2,9 @@ body{
     background-image : url('skyCloudy.jpg');
     background-size: cover;
     }
+
+@media (max-width: 360px) {
+    body {
+        background-size: 300%
+    }
+}

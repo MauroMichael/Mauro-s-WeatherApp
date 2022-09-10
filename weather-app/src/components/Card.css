@@ -1,6 +1,6 @@
 .card {
     background-color: rgb(95, 188, 225, .6);
-    width: 25%;
+    width: 300px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-radius: 2rem;
     font-weight: bolder;
@@ -40,7 +40,7 @@ transform: translateX(-3px);
 }
 
 .button-close {
-    background-color: rgba(130, 130, 127, 0.986);
+    background-color: rgba(95, 95, 91, 0.986);
     border-radius: 1rem;
     color: white;
     border: 0px;

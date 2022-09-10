@@ -14,3 +14,12 @@ input {
     background-color: black;
     color: white;
 }
+
+@media (max-width: 360px) {
+    input {
+        width: 40%;
+    }
+    .submit-input {
+        width: 30%;
+    }
+}

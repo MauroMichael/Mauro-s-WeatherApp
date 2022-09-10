@@ -28,3 +28,10 @@
     border: 0;
     background-color: khaki;
 }
+
+@media (max-width: 360px) {
+    .city {
+        width: 80%;
+        margin-top: 15%;
+    }
+}

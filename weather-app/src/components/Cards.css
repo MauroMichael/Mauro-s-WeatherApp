@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Rampart+One&display=swap');
+
 .cards-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 
 }
+
+.cards-empty {
+    font-family: 'Rampart One', cursive;
+    color: rgb(15, 15, 14);
+    margin-top: 15%;
+}
+

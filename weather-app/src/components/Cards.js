@@ -6,7 +6,7 @@ function Cards({cities, onClose}) {
     return (
         <>
         {
-        cities.length === 0 ? <h1>No cities added</h1>:
+        cities.length === 0 ? <h1 className="cards-empty">No cities added</h1>:
         <div className="cards-container">
             {
                 cities?.map(c => <Card
