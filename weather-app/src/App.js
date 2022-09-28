@@ -45,7 +45,7 @@ function App() {
             navigate('/');
           }
         } else {
-          swal('Oops!', 'City not finded!', 'error')
+          swal('Oopss!', 'City not finded!', 'error')
         };
       });
     }
