@@ -2,7 +2,7 @@
     background-color: rgb(95, 188, 225, .6);
     width: 300px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-radius: 2rem;
+    border-radius: .4rem;
     font-weight: bolder;
     margin-right: 2px;
     margin-top: 25px;
@@ -16,8 +16,8 @@ box-shadow:
 1px 1px #53a7ea,
 2px 2px #53a7ea,
 3px 3px #53a7ea;
--webkit-transform: translateX(-3px);
-transform: translateX(-3px);
+-webkit-transform: translateY(-3px);
+transform: translateY(-3px);
 }
 
 .content {
@@ -40,7 +40,7 @@ transform: translateX(-3px);
 }
 
 .button-close {
-    background-color: rgba(95, 95, 91, 0.986);
+    background-color: rgba(82, 82, 78, 0.986);
     border-radius: 1rem;
     color: white;
     border: 0px;

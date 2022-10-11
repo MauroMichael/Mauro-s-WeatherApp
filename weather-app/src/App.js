@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
@@ -10,10 +10,20 @@ import City from './components/City';
 import Cards from './components/Cards';
 
 const apiKey = '4ae2636d8dfbdc3044bede63951a019b';
+const KEY =  'citiesWeather'
 
 function App() {
   const [cities, setCities] = useState([]);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const storedCities = JSON.parse(localStorage.getItem(KEY));
+    setCities(storedCities);
+  },[])
+
+  useEffect(() => {
+    localStorage.setItem(KEY, JSON.stringify(cities));
+  },[cities])
 
   function onClose(id) {
     setCities(oldCities => oldCities.filter(c => c.id !== id))
